@@ -1,10 +1,15 @@
-# Title (replace with your title)
+# Tutorial - Matching a URL using regular expressions (ReGex).
 
-Introductory paragraph (replace this with your text)
+RegEx, or a regular expression, is defined as a pattern of characters that are utilized to validate chatarcter combinations. This tutorial will take a commonly used regex pattern used in programming; matching a URL; and break it down to explain what it does and how it does it.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+The URL matching regex is
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+
+This regular expressions determines whether or not the input is a valid URL.  This regex can be used in a variety of ways; but most obvious is URL data validation.
+
+
 
 ## Table of Contents
 
