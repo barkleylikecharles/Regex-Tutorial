@@ -9,8 +9,6 @@ The URL matching regex is
 
 This regular expressions determines whether or not the input is a valid URL.  This regex can be used in a variety of ways; but most obvious is URL data validation.
 
-
-
 ## Table of Contents
 
 - [Anchors](#anchors)
@@ -28,9 +26,18 @@ This regular expressions determines whether or not the input is a valid URL.  Th
 ## Regex Components
 
 ### Anchors
+There are two principal anchors in this regex epression; the ^ at the beginning and the $ at the end.  These complete an exact string match with the components included within the two anchors. When used alone, the ^ anchor matches any string that begins with the characters that follow the anchor and the $ matches any string that ends with the characters that precede it. By putting the regex between these two described anchors. we are asking the function to match exactly what it begins and what it ends with.  As URL follow a pattern or the same beginning and end; this is a useful expression in validation.
 
 ### Quantifiers
+Quantifiers communicate to the regex engine that it must match the quantity of the character or expression to its left. The following are the quantifiers that are used in this regex expression:
+  ?, +, *, {n}, {n, }, {n,m}
 
+In the URL matching regex they are used in the following places:
+    * https?          Matches 'https', 'http'
+    * [\da-z\.-]+     Matches a single digit, group of letters (a-z), dot (.)or hyphen (-) 1 or more times
+    * [a-z\.]{2,6}    Matches 2 to 6 copies of the sequence [a-z\.]
+    * [\/\w \.-]*     Matches '/', '.', '-', 'www', '//'
+    
 ### OR Operator
 
 ### Character Classes
