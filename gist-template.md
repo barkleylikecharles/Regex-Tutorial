@@ -37,8 +37,12 @@ In the URL matching regex they are used in the following places:
     * [\da-z\.-]+     Matches a single digit, group of letters (a-z), dot (.)or hyphen (-) 1 or more times
     * [a-z\.]{2,6}    Matches 2 to 6 copies of the sequence [a-z\.]
     * [\/\w \.-]*     Matches '/', '.', '-', 'www', '//'
-    
+
 ### OR Operator
+The URL matching regex uses [] as teh main OR operator.  The expression will look for any matches of any character or character classes within the brackets.
+
+An example for the URL matching regex:
+    [\da-z\.-]        Matches atches for any digits (\d) OR any characters between a and z (a-z) OR any '.' (\.) OR any '-' (-).
 
 ### Character Classes
 
