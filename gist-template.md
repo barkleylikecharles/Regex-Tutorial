@@ -19,7 +19,7 @@ This regular expressions determines whether or not the input is a valid URL.  Th
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Look-ahead and Look-behind](#sources)
+- [Sources](#sources)
 
 ## Regex Components
 
